@@ -7,7 +7,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 
-@Tag(name = "endpoints de autenticação")
+@Tag(name = "AUTENTICAÇÃO")
 public interface AuthSwagger {
 
     @Operation(summary = "gera token JWT de autenticação",

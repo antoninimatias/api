@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 
-@Tag(name ="endpoints do curso de práticas tecnológicas")
+@Tag(name ="CLIENTE")
 public interface ApiSwagger {
 
     @Operation(summary = "Busca todos os clientes",
