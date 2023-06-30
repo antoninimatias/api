@@ -1,12 +1,10 @@
 package com.minsait.api.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
-import com.jayway.jsonpath.JsonPath;
-import com.minsait.api.controller.dto.GetTokenRequest;
-import com.minsait.api.controller.dto.UsuarioRequest;
-import com.minsait.api.repository.UsuarioRepository;
-import com.minsait.api.sicurity.util.JWTUtil;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -24,10 +22,13 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import java.util.ArrayList;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
+import com.jayway.jsonpath.JsonPath;
+import com.minsait.api.controller.dto.GetTokenRequest;
+import com.minsait.api.controller.dto.UsuarioRequest;
+import com.minsait.api.repository.UsuarioRepository;
+import com.minsait.api.sicurity.util.JWTUtil;
 
 @DisplayName("Teste endpoints Usuario")
 @RunWith(SpringRunner.class)
