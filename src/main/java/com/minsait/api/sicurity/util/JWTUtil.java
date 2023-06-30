@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Component
 public class JWTUtil {
@@ -18,7 +19,7 @@ public class JWTUtil {
     @Value("${security.enabled}")
     private String securityEnabled;
 
-    public String generateToken(String username, ArrayList<String> authorities, Integer user_id) {
+    public String generateToken(String username, List<String> authorities, Integer user_id) {
         return Jwts.builder()
                 .claim("user_name",username)
                 .claim("authorities",authorities)
